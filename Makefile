@@ -1,6 +1,7 @@
 SHELL = $(PWD)/SHELL
 
 env:
+	chmod -R 755 ./scripts
 	cp -i env-example.sh env.sh
 
 update: env
@@ -39,8 +40,9 @@ model: env
 auth:
 	./scripts/auth
 
-scaffold:
-	./scripts/scaffold.sh
-
 debugger:
+	# make swap file
+	sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+	sudo /sbin/mkswap /var/swap.1
+	sudo /sbin/swapon /var/swap.1
 	composer require barryvdh/laravel-debugbar --dev

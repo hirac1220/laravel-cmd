@@ -5,9 +5,8 @@
 ```
 $ git clone https://github.com/hirac1220/laravel-cmd.git
 ```
-2. フォルダへ実行権限付与、フォルダへ移動
+2. フォルダへ移動
 ```
-$ chmod -R 755 laravel-cmd/
 $ cd laravel-cmd/
 ```
 3. env-example.shにアプリケーション名をセット(デフォルトはAPP=cms)  
@@ -16,7 +15,7 @@ $ cd laravel-cmd/
 ```
 $ make update
 ```
-5. env.shで指定したAPPフォルダへlaravelインストール
+5. env.shで指定したAPPフォルダへlaravel version5.5インストール
 ```
 $ make install-v5.5
 ```
@@ -58,16 +57,6 @@ $ make auth
 5. debuggerインストール
 ```
 $ make debugger
-```
-
-## [Scaffold](https://github.com/dog-ears/crud-d-scaffold)の使用
-1. 環境構築時の手順5で最新のlaravelインストール
-```
-$ make install-latest
-```
-2. scaffoldのインストールとセットアップ
-```
-$ make scaffold
 ```
 
 ## 参考資料
