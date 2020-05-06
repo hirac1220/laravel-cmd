@@ -35,5 +35,3 @@ $ make create-db
 ```
 $ make phpmyadmin
 ```
-
-## CRUD追加
