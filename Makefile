@@ -6,7 +6,10 @@ env:
 update: env
 	./scripts/update.sh
 
-install:
+install-v5.5:
+	./scripts/install-v5.5.sh
+
+install-latest:
 	./scripts/install.sh
 
 apache:
@@ -35,6 +38,9 @@ model: env
 
 auth:
 	./scripts/auth
+
+scaffold:
+	./scripts/scaffold.sh
 
 debugger:
 	composer require barryvdh/laravel-debugbar --dev

@@ -1,7 +1,7 @@
 # [Laravel commands](https://github.com/hirac1220/laravel-cmd.git) for cloud9の使い方
 
 ## 環境構築
-1. 作成したproject直下にlaravel-cmdをドラッグ&ドロップ or git clone
+1. 作成したcloud9 project直下にlaravel-cmdをドラッグ&ドロップ or git clone
 ```
 $ git clone https://github.com/hirac1220/laravel-cmd.git
 ```
@@ -18,7 +18,7 @@ $ make update
 ```
 5. env.shで指定したAPPフォルダへlaravelインストール
 ```
-$ make install
+$ make install-v5.5
 ```
 6. apacheの起動確認
 ```
@@ -41,20 +41,33 @@ $ make phpmyadmin
 1. DB tableの作成(事前にenv-example.shにファイル名とテーブル名をセット)
 ```
 $ make create-table
+```
+2. 作成したテーブルファイルを更新後migrate
+```
 $ make migrate
 ```
-2. モデルの作成
+3. モデルの作成
 ```
 $ make model(事前にenv-example.shにモデル名をセット)
 ```
-3. 認証の追加
+4. 認証の追加
 ```
 $ make auth
 ```
 
-4. debuggerインストール
+5. debuggerインストール
 ```
 $ make debugger
+```
+
+## [Scaffold](https://github.com/dog-ears/crud-d-scaffold)の使用
+1. 環境構築時の手順5で最新のlaravelインストール
+```
+$ make install-latest
+```
+2. scaffoldのインストールとセットアップ
+```
+$ make scaffold
 ```
 
 ## 参考資料

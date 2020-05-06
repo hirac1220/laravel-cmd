@@ -2,4 +2,4 @@
 
 composer global require "laravel/installer"
 
-composer create-project laravel/laravel ../$APP 5.5.* --prefer-dist
+composer create-project laravel/laravel ../$APP
