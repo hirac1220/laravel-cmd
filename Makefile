@@ -20,3 +20,21 @@ create-db:
 
 phpmyadmin:
 	./scripts/phpmyadmin.sh
+
+create-table: env
+	./scripts/create-tb.sh
+
+migrate:
+	./scripts/migrate.sh
+
+mysql:
+	mysql -u root -p
+
+model: env
+	./scripts/model.sh
+
+auth:
+	./scripts/auth
+
+debugger:
+	composer require barryvdh/laravel-debugbar --dev

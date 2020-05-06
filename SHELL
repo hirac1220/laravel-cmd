@@ -4,4 +4,9 @@ source env.sh
 
 exec env \
 APP=${APP} \
+DB_HOST=${DB_HOST} \
+DB_DATABASE=${DB_DATABASE} \
+TB_FILE=${TB_FILE} \
+TABLE=${TABLE} \
+MODEL=${MODEL} \
 bash "$@"
