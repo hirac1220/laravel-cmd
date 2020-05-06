@@ -1,16 +1,19 @@
-SHELL = $(PWD)/scripts/SHELL
+SHELL = $(PWD)/SHELL
 
 env:
-	cp -i ./env-example.sh env.sh
+	cp -i env-example.sh env.sh
 
-update:
+update: env
 	./scripts/update.sh
 
-install: env.sh
-	./scripts/start.sh
+install:
+	./scripts/install.sh
 
 apache:
 	./scripts/apache.sh
 
 start:
 	./scripts/start.sh
+
+create-db:
+	./scripts/create-db.sh

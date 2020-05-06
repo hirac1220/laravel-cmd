@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ../$APP
+
 # MySQL起動
 sudo service mysqld start
 
