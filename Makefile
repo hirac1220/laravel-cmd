@@ -17,3 +17,6 @@ start:
 
 create-db:
 	./scripts/create-db.sh
+
+phpmyadmin:
+	./scripts/phpmyadmin.sh
