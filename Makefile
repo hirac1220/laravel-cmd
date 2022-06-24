@@ -7,10 +7,7 @@ env:
 update: env
 	./scripts/update.sh
 
-install-v5.5:
-	./scripts/install-v5.5.sh
-
-install-latest:
+install:
 	./scripts/install.sh
 
 apache:
@@ -46,3 +43,6 @@ debugger:
 	sudo /sbin/mkswap /var/swap.1
 	sudo /sbin/swapon /var/swap.1
 	composer require barryvdh/laravel-debugbar --dev
+
+heroku:
+	./scripts/heroku.sh

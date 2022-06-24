@@ -4,8 +4,8 @@
 cd ../$APP/public
 
 # get phpMyAdmin
-wget https://files.phpmyadmin.net/phpMyAdmin/4.8.3/phpMyAdmin-4.8.3-all-languages.zip
-unzip phpMyAdmin-4.8.3-all-languages.zip
+wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.zip
+unzip phpMyAdmin-5.2.0-all-languages.zip
 
 # ファイル名変更
-mv phpMyAdmin-4.8.3-all-languages phpMyAdmin
+mv phpMyAdmin-5.2.0-all-languages phpMyAdmin
